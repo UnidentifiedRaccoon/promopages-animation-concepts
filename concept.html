@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Настройка объявлений — концепт</title><link rel="stylesheet" href="style.css"></head>
+<body class="prototype-page">
+<div class="demo-toolbar"><a href="index.html">← Все концепты</a><strong id="concept-name"></strong><label>Сценарий <select id="scenario"><option value="mixed">Смешанная подборка</option><option value="ready">Все видео готовы</option><option value="none">Нет готовых видео</option><option value="many">12 изображений</option></select></label><button id="reset" class="quiet">Сбросить демо</button></div>
+<main class="modal" aria-label="Настройка объявлений">
+ <header class="modal-header"><h1>Настройка объявлений</h1><button id="close" class="icon-btn" aria-label="Закрыть настройки">×</button><nav id="tabs" aria-label="Разделы настроек"></nav></header>
+ <div id="modal-content" class="modal-content"></div>
+ <footer class="modal-footer"><span id="save-state" role="status">Все изменения сохранены</span><button id="cancel" class="button">Отмена</button><button id="save" class="button accent">Сохранить</button></footer>
+</main>
+<p class="demo-note">Интерактивный концепт. Изменения сохраняются только в этом браузере. Видео — готовые демонстрационные примеры.</p>
+<dialog id="video-dialog" class="video-dialog"><header><div><h2 id="video-title">Просмотр оживлённого изображения</h2><p id="video-caption"></p></div><button class="icon-btn" id="video-close" aria-label="Закрыть видео">×</button></header><video id="player" controls playsinline muted preload="metadata"></video><p>Просмотр не меняет выбранную версию изображения.</p><p id="video-error" role="alert" hidden>Не удалось загрузить видео. Закройте просмотр и попробуйте ещё раз.</p></dialog>
+<div id="toast" class="toast" role="status" hidden></div>
+<script src="concept.js"></script>
+</body></html>
